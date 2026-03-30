@@ -201,6 +201,53 @@ a{color:inherit; text-decoration:none}
   margin: 10px 0 16px;
 }
 
+.place {
+  margin-top: 6px;
+  margin-bottom: 2px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  background: linear-gradient(90deg, #ff5db1, #ffb3d9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.address-link {
+  display: inline-block;
+  margin-top: 0;
+  font-size: 1.05rem;
+  color: #dcdcdc;
+  text-decoration: none;
+  position: relative;
+  transition: all 0.25s ease;
+}
+
+.address-link::before {
+  content: "📍";
+  margin-right: 6px;
+}
+
+.address-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, #ff5db1, #ffb3d9);
+  opacity: 0.6;
+  transition: all 0.25s ease;
+}
+
+.address-link:hover {
+  color: #fff;
+  transform: translateY(-1px);
+}
+
+.address-link:hover::after {
+  height: 2px;
+  opacity: 1;
+}
+
 /* ===== Button ===== */
 .btn{
   display:inline-flex;
@@ -300,6 +347,14 @@ a{color:inherit; text-decoration:none}
   margin: 8px 0 0;
   color: rgba(230,230,234,.75);
   font-size: 13px;
+}
+
+.event-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  margin: 18px 0 8px;
 }
 
 /* ===== Footer ===== */
