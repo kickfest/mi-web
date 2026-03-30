@@ -207,6 +207,7 @@ a{color:inherit; text-decoration:none}
   font-size: 1.2rem;
   font-weight: 600;
   background: linear-gradient(90deg, #ff5db1, #ffb3d9);
+  background-clip: text;  
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
